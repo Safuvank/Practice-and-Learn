@@ -234,5 +234,54 @@ let expr = function (){
 
 // recursoion
 
+//Print 1 to 5
+
+function oneToFive(num){
+    if (num > 5){
+        return;
+    }
+    console.log(num);
+    oneToFive(num + 1)
+}
+
+oneToFive(1);
+
+
+//print 5 to 1
+
+function fiveToOne(n){
+    if(n<1){
+        return;
+    }
+    console.log(n)
+    return fiveToOne(n - 1)
+}
+fiveToOne(5);
+
+
+//Hoisting
+
+
+console.log(hoist);
+var hoist = 35;
+
+
+// console.log(hoisted);
+let hoisted = 35;
+
+// just practising question after the review
+
+const fruits = ["apple","orange","grapes","kiwi","jackfruit"];
+
+console.log(fruits[1]);
+
+fruits.push("mango");
+fruits.unshift("strawberry");
+fruits.pop();
+
+console.log(fruits);
+
+
+
 
 
