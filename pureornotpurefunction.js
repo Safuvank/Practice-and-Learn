@@ -17,3 +17,23 @@ let ripedBanana = ripe(fruit)
 
 console.log(ripedBanana)
 console.log(fruit)
+
+
+//it can change to pure function with 
+
+
+let fruit = {
+    name : "name",
+    color : "green"
+}
+
+const ripe = (item) => {
+    return {
+        ...item, color : "yellow"
+    }
+}
+
+let ripedBanana = ripe(fruit)
+
+console.log(ripedBanana)
+console.log(fruit)
