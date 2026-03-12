@@ -22,8 +22,13 @@ let square = function (a){
 console.log(square(5))
 
 
-const double = x => x * 2;
+const double = (x,y) => x * y;
+//paranthesis optional for single parameter
 
-console.log(double(10))
+console.log(double(10,20))
+
+const createUser = () => ({name: "safuan"})
+
+console.table(createUser())
 
 
