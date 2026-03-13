@@ -4,17 +4,24 @@
 //     console.log(this)
 // }
 
-
 // greet()
-
-
 
 // CALL
 
-    function greet(city){
-        console.log("Hello, " + this.name + "from " + city)
-    }
+// function greet(city) {
+//   console.log("Hello, " + this.name + "from " + city);
+// }
 
-    const user = {name: "safuvan"}
+// const user = { name: "safuvan" };
 
-    greet.call(user,"dubail")
+// greet.call(user, "dubail");
+
+// apply
+
+function greet(city, country) {
+  console.log(this.name + " from " + city + ", " + country);
+}
+
+const user = { name: "Ali" };
+
+greet.apply(user, ["Dubai", "UAE"]);
