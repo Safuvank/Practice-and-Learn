@@ -25,3 +25,19 @@ function greet(city, country) {
 const user = { name: "Ali" };
 
 greet.apply(user, ["Dubai", "UAE"]);
+
+
+
+// CLASS INHERITANCE
+
+class Animal {
+   void speak(){
+      System.out.println("Animal makes sound");
+   }
+}
+
+class Dog extends Animal {
+   void bark(){
+      System.out.println("Dog barks");
+   }
+}
