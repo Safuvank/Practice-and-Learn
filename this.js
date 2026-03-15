@@ -30,14 +30,14 @@ greet.apply(user, ["Dubai", "UAE"]);
 
 // CLASS INHERITANCE
 
-class Animal {
-   void speak(){
-      System.out.println("Animal makes sound");
-   }
-}
+// class Animal {
+//    void speak(){
+//       System.out.println("Animal makes sound");
+//    }
+// }
 
-class Dog extends Animal {
-   void bark(){
-      System.out.println("Dog barks");
-   }
-}
+// class Dog extends Animal {
+//    void bark(){
+//       System.out.println("Dog barks");
+//    }
+// }
