@@ -53,6 +53,30 @@ console.log(map1.size);
 
 // return max key
 
+// const mark = {
+//   safuvan: 80,
+//   adil: 90,
+//   murshid: 89,
+//   muhsin: 77,
+// };
+
+// function maxMark(mark) {
+//   let max = -Infinity;
+
+//   let key;
+
+//   for (let k in mark) {
+//     if (mark[k] > max) {
+//       max = mark[k];
+//       key = k;
+//     }
+//   }
+
+//   return key;
+// }
+
+// console.table(maxMark(max))
+
 const mark = {
   safuvan: 80,
   adil: 90,
@@ -62,7 +86,6 @@ const mark = {
 
 function maxMark(mark) {
   let max = -Infinity;
-
   let key;
 
   for (let k in mark) {
@@ -75,4 +98,4 @@ function maxMark(mark) {
   return key;
 }
 
-console.log()
+console.table(maxMark(mark));
