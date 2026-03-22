@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 c exercise</title>
+  </head>
+  <body>
+    <button
+      onclick="
+        coffeeQuantity++;
+        coffeeCost = coffee * coffeeQuantity;
+        console.log(`added to cart ${coffeeCost}`);
+      "
+    >
+      coffee
+    </button>
+    <button
+      onclick="
+        bagelQuantity++;
+        bagelCost = bagel * bagelQuantity;
+        console.log(`added to cart ${bagelCost}`);
+      "
+    >
+      bagel
+    </button>
+    <button
+      onclick="
+        soupQuantity++;
+        soupCost = soup * soupQuantity;
+        console.log(`added to cart ${soupCost}`);
+      "
+    >
+      soup
+    </button>
+    <button
+      onclick="
+        totalCost = coffeeCost + bagelCost + soupCost;
+        console.log(`Total cost is : $${totalCost}`);
+      "
+    >
+      Total cost
+    </button>
+    
+    <button onclick="
+    tax = totalCost * 0.1
+    console.log(`after tax ${tax}`)">
+      After Tax
+    </button>
+
+    <button onclick="
+    afterTax = totalCost + tax
+    console.log(`Cost after tax is : $${afterTax}`)
+    ">
+        Cost after Tax
+    </button>
+    <script>
+      let coffee = 5;
+      let bagel = 3;
+      let soup = 9;
+      let coffeeCost = 0;
+      let bagelCost = 0;
+      let soupCost = 0;
+      let totalCost = 0;
+      let coffeeQuantity = 0;
+      let bagelQuantity = 0;
+      let soupQuantity = 0;
+      let totalQuantity = 0;
+      let tax = 0;
+      let afterTax = 0;
+    </script>
+  </body>
+</html>
