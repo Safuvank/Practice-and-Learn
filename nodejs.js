@@ -85,3 +85,12 @@
 // readFilePromise("import.txt", "utf-8")
 //   .then(data => console.log(data))
 //   .catch(err => console.error(err));
+
+
+const zlib = require("zlib");
+const fs = require("fs");
+
+const input = fs.createReadStream("input.txt");
+const output = fs.createWriteStream("input.txt.gz");
+
+input.pipe(zlib.createGzip()).pipe(output);
