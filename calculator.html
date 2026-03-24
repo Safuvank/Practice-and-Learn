@@ -113,12 +113,30 @@
     <p>
       <button
         onclick="
+          calculation += ' * ';
+          console.log(calculation);
+        "
+      >
+        x
+      </button>
+      <button
+        onclick="
+          calculation += '.';
+          console.log(calculation);
+        "
+      >
+        .
+      </button>
+      <button
+        onclick="
           calculation += ' - ';
           console.log(calculation);
         "
       >
         -
       </button>
+    </p>
+    <p>
       <button
         onclick="
           calculation += ' / ';
