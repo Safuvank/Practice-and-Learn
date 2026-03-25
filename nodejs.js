@@ -87,10 +87,21 @@
 //   .catch(err => console.error(err));
 
 
-const zlib = require("zlib");
-const fs = require("fs");
+// const zlib = require("zlib");
+// const fs = require("fs");
 
-const input = fs.createReadStream("input.txt");
-const output = fs.createWriteStream("input.txt.gz");
+// const input = fs.createReadStream("input.txt");
+// const output = fs.createWriteStream("input.txt.gz");
 
-input.pipe(zlib.createGzip()).pipe(output);
+// input.pipe(zlib.createGzip()).pipe(output);
+
+
+
+// const fs = require("fs");
+
+// let content = "this is the most contern tin thehidojofjadsoijfoijdsoijfiojdsoijgfoidsiofjodsijioj"
+
+// fs.writeFileSync("test1.txt", content);
+
+
+
