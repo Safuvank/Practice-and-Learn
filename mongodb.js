@@ -29,4 +29,51 @@ db.users.aggregate([
   },
 ]);
 
+// $sort
+// sort documents
+
+db.users.aggregate({$sort: {totalSpent: -1}})
+
+
+// $limit and $skip 
+// used for pagination
+
+{$limit : 5}
+{$skip: 10}
+
+
+//$unwind
+// array handling breaks array into multiple documents
+
+// $lookup
+// join collection
+// combines data from two collections
+
+// $facet (multiple pipelines)
+// run multiple aggregation at once
+
+{
+    $facet: {
+        totalSales: [{$group: {_id: null, total: {$sum: "$price" }}}],
+        avgSales: [{$group: {_id: null, avg: {$avg: "$price"}}}]
+    }
+}
+
+// $bucket (grouping into ranges)
+// useful for analytics price ranges
+
+{
+    $bucket: {
+        groupBy: "$price",
+        boundaries: [0,1000, 5000, 10000],
+        default: "other"
+    }
+}
+
+// $addFields
+// adds new field without removing existing ones
+
+
+// $count
+// count documents
 
