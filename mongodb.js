@@ -52,23 +52,23 @@ db.users.aggregate({$sort: {totalSpent: -1}})
 // $facet (multiple pipelines)
 // run multiple aggregation at once
 
-{
-    $facet: {
-        totalSales: [{$group: {_id: null, total: {$sum: "$price" }}}],
-        avgSales: [{$group: {_id: null, avg: {$avg: "$price"}}}]
-    }
-}
+// {
+//     $facet: {
+//         totalSales: [{$group: {_id: null, total: {$sum: "$price" }}}],
+//         avgSales: [{$group: {_id: null, avg: {$avg: "$price"}}}]
+//     }
+// }
 
 // $bucket (grouping into ranges)
 // useful for analytics price ranges
 
-{
-    $bucket: {
-        groupBy: "$price",
-        boundaries: [0,1000, 5000, 10000],
-        default: "other"
-    }
-}
+// {
+//     $bucket: {
+//         groupBy: "$price",
+//         boundaries: [0,1000, 5000, 10000],
+//         default: "other"
+//     }
+// }
 
 // $addFields
 // adds new field without removing existing ones
