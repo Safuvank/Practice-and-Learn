@@ -4,9 +4,17 @@ db.adminCommand({
 })
 
 
-// Example: Capped Collection
+// Example: Capped Collection syntax
 
-db.createCollection("logs", {
-  capped: true,
-  size: 100000
+// db.createCollection("collectionName", {
+//    capped: true,
+//    size: <bytes>,
+//    max: <optional number of documents>
+// })
+
+
+db.createCollection("students",{
+    capped: true,
+    size: 100000,
+    max: 100
 })
