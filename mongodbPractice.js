@@ -1,8 +1,7 @@
 db.adminCommand({
   renameCollection: "ecommerce.users",
-  to: "archive.users_backup"
-})
-
+  to: "archive.users_backup",
+});
 
 // Example: Capped Collection syntax
 
@@ -12,9 +11,10 @@ db.adminCommand({
 //    max: <optional number of documents>
 // })
 
+db.createCollection("students", {
+  capped: true,
+  size: 100000,
+  max: 100,
+});
 
-db.createCollection("students",{
-    capped: true,
-    size: 100000,
-    max: 100
-})
+db.createCollection("new", { capped: true, size: 10000, max: 50 });
