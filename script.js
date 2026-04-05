@@ -24,3 +24,15 @@ console.log(word.length);
 
 const number = [5, 10, 15];
 
+const sum = number.reduce((a, b) => a + b, 0);
+
+console.log(sum);
+
+const count = ["a", "b", "a","d", "a"];
+
+const countsum = count.reduce((acc, curr) => {
+  acc[curr] = (acc[curr] || 0) + 1;
+  return acc;
+}, {});
+
+console.log(countsum);
