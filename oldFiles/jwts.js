@@ -138,10 +138,19 @@ app.post("/login", async (req, res) => {
 
   const isMatch = await bcrypt.compare(password, user.password);
 
-  const token = jwt.sign(
-    {email : user.email},
-    "secret",
-    {expiresIn: "2m"}
-  )
-  res.json({token})
+  const token = jwt.sign({ email: user.email }, "secret", { expiresIn: "2m" });
+  res.json({ token });
 });
+
+app.post("/register", async (req, res) => {
+  const { email, name, password } = req.body;
+
+  const hashedPassword = await bcrypt.hash(password, 10);
+  users.push({
+    email,
+    password: hashedPassword,
+  });
+  res.send("registered successfully completed");
+});
+
+
