@@ -1,6 +1,6 @@
 "use strict";
 // infer types (IMPLICIT TYPED) automatically ditect the type
-let userName = "safuvan";
+// let userName = "safuvan";
 userName = "safuv";
 // defining types
 let teacherName = "safuvan";
@@ -12,3 +12,14 @@ let obj = {
     age: 20,
     course: "mern",
 };
+
+
+function getInitials(name) {
+  let result = name
+    .split(" ")
+    .map()
+   
+    console.log(result)
+}
+
+getInitials("Tommy millwood")
