@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 let userName = "safuvan";
 let salary = 25000;
 // userName = 12
@@ -17,3 +18,4 @@ console.log(result);
 // }
 let value;
 value = Math.random() > 0.5 ? "hi" : 10;
+//# sourceMappingURL=app.js.map
