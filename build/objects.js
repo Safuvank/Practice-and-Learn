@@ -4,4 +4,7 @@ let car = {
     name: "swift",
     model: 2020
 };
+let jeep = {
+    name: "jeep"
+};
 //# sourceMappingURL=objects.js.map
