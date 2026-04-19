@@ -39,3 +39,7 @@ const employeeDetails : User = {
 // employeeDetails.Id = 121;
 employeeDetails.name = "suhail"
 employeeDetails.skills.push("react")
+
+
+let numbers13: number[] = [1, 2, 3];
+
