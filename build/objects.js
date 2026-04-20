@@ -7,4 +7,8 @@ let car = {
 let jeep = {
     name: "jeep"
 };
+let user = {
+    name: "Ali",
+    age: 20
+};
 //# sourceMappingURL=objects.js.map

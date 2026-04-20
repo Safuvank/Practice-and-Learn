@@ -21,4 +21,5 @@ const employeeDetails = {
 // employeeDetails.Id = 121;
 employeeDetails.name = "suhail";
 employeeDetails.skills.push("react");
+let numbers13 = [1, 2, 3];
 //# sourceMappingURL=array.js.map

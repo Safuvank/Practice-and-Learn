@@ -9,4 +9,7 @@ let greet;
 greet = function (name) {
     return "Hello" + name;
 };
+function findRandomNumber() {
+    return;
+}
 //# sourceMappingURL=function.js.map

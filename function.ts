@@ -12,3 +12,7 @@ let greet: (name: string) => string
 greet = function(name){
     return "Hello" + name
 }
+
+function findRandomNumber(){
+  return 
+}
