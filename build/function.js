@@ -5,11 +5,4 @@ function addTwoNumbers(a, b) {
 }
 addTwoNumbers(5, 20);
 // function as a type
-let greet;
-greet = function (name) {
-    return "Hello" + name;
-};
-function findRandomNumber() {
-    return;
-}
 //# sourceMappingURL=function.js.map
