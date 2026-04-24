@@ -7,12 +7,3 @@ addTwoNumbers(5,20);
 
 // function as a type
 
-let greet: (name: string) => string
-
-greet = function(name){
-    return "Hello" + name
-}
-
-function findRandomNumber(){
-  return 
-}
