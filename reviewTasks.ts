@@ -12,11 +12,3 @@ type obj2 = {
   age : number
 }
 
-
-type userDetails = obj1 & obj2
-
-let id: (string | number ) = "123"
-
-let lastName = "safuvan" as string
-
-let value = (lastName as string).length
