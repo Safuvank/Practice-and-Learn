@@ -25,3 +25,13 @@ console.log(result)
 let value: string | number;
 
 value = Math.random() > 0.5 ? "hi" : 10;
+
+type user1 = {
+    name: string
+}
+
+type user2 = {
+    age: number
+}
+
+type userDetails = user1 & user2
