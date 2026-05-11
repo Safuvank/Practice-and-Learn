@@ -18,4 +18,5 @@ console.log(result);
 // }
 let value;
 value = Math.random() > 0.5 ? "hi" : 10;
+let userDetails = "safuvan";
 //# sourceMappingURL=app.js.map
