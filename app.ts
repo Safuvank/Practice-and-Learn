@@ -35,3 +35,7 @@ type user2 = {
 }
 
 type userDetails = user1 & user2
+
+
+let userDetails = "safuvan" as string
+
