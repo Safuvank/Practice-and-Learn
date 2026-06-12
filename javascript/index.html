@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 10;
+      let b = a;
+
+      b = 20;
+
+      console.log(a);
+      console.log(b);
+
+      let arr1 = [1, 2, 3];
+      let arr2 = arr1;
+
+      arr2.push(4);
+
+      console.log(arr1);
+      console.log(arr2);
+
+      let name = "Safuvan";
+      console.log(name[1]);
+
+      let str = "Safuvan";
+      str = "K" + str.slice(1, 4, 1);
+      console.log(str);
+
+      console.log(Number.MAX_SAFE_INTEGER);
+      console.log(9007199254740992 === 9007199254740993);
+      console.log(9007199254740992);
+      console.log(9007199254740994);
+      console.log(10n + 5n);
+      console.log(typeof 100n);
+      console.log(typeof BigInt(500));
+      console.log(typeof BigInt("500"));
+
+      console.log(typeof 9007199254740991n);
+
+      let x = 20;
+      let y = x;
+
+      y = 50;
+
+      console.log(y);
+
+      console.log(typeof Symbol("id"));
+
+      console.log(typeof Number);
+      console.log(typeof String);
+      console.log(typeof Boolean);
+      console.log(typeof BigInt);
+      console.log(typeof Symbol);
+      console.log(Number);
+
+      console.log(Number instanceof Function);
+      console.log(String instanceof Function);
+      console.log(Boolean instanceof Function);
+
+      console.log(typeof Number("100"));
+
+      console.log(typeof new Number("100"));
+      console.log(typeof String);
+      console.log(typeof String(100));
+    </script>
+  </body>
+</html>
